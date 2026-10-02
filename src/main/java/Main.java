@@ -23,10 +23,10 @@ public class Main {
         sum = numbers.stream().reduce(0, (a, b) -> a+b);
         System.out.println("Sum numbers: " + sum);
 
-        numbers.stream().forEach(n -> System.out.print(n));
+        List<Integer> tempList = new ArrayList<>();
+        numbers.stream().forEach(n -> tempList.add(n*100));
 
-
-
+        System.out.println(tempList);
 
     }
 }
